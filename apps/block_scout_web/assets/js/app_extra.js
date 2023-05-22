@@ -3,14 +3,14 @@ import { isDarkMode } from './lib/dark_mode'
 function applyDarkMode () {
   if (isDarkMode()) {
     document.body.className += ' ' + 'dark-theme-applied'
-    document.body.style.backgroundColor = '#1c1d31'
+    document.body.style.backgroundColor = '#161b19'
   }
 }
 window.onload = applyDarkMode()
 
 if (isDarkMode()) {
   if (document.getElementById('top-navbar')) {
-    document.getElementById('top-navbar').style.backgroundColor = '#282945'
+    document.getElementById('top-navbar').style.backgroundColor = '#1e2423'
   }
   /*
   if (document.getElementById('navbar-logo')) {
@@ -25,11 +25,11 @@ if (isDarkMode()) {
   const search = document.getElementById('main-search-autocomplete')
   const searchMobile = document.getElementById('main-search-autocomplete-mobile')
   if (search && search.style) {
-    search.style.backgroundColor = '#22223a'
-    search.style.borderColor = '#22223a'
+    search.style.backgroundColor = '#1f2623'
+    search.style.borderColor = '#1f2623'
   }
   if (searchMobile && searchMobile.style) {
-    searchMobile.style.backgroundColor = '#22223a'
-    searchMobile.style.borderColor = '#22223a'
+    searchMobile.style.backgroundColor = '#1f2623'
+    searchMobile.style.borderColor = '#1f2623'
   }
 }
